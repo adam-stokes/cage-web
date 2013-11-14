@@ -3,15 +3,12 @@
  * GET home page.
  */
 
-var request = require('request');
-
 exports.index = function(req, res){
-    request('http://localhost:9000/entity/activity', function(err, resp, body) {
-	res.render('index', { title: 'CAGE-web actvitiy app.'
-			      , activityList: body });
-    });
+    res.render('index');
 };
 
-exports.addActivity = function(req, res){
-    res.send('haiiiii');
+exports.partials = function(req, res){
+    var name = req.params.name;
+    res.render('partials/' + name);
 };
+

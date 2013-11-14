@@ -1,0 +1,7 @@
+<h1>Pages</h1>
+<ul class="pages">
+  <li ng-repeat="page in pages track by product.author">
+    <a href="#/{{page.title}}">{{page.title}}</a>
+  </li>
+</ul>
+
