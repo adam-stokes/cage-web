@@ -2,9 +2,7 @@
 
 var cageweb = angular.module('cageweb', [
     'ngRoute',
-    'cagewebFilters', 
-    'cagewebControllers',
-    'cagewebServices'
+    'cagewebControllers'
 ]);
 
 cageweb.config(['$routeProvider',
