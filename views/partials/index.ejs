@@ -1,6 +1,9 @@
 <p>The activity stream</p>
-<div ng-repeat="page in pages track by $id(page)">
-  page {{page.$$hashKey}} - {{page.title}}
+<div class="activity-update">
+  
+</div>
+<div ng-repeat="act in activity track by $id(act)">
+  {{act.status}}
 </div>
 
 
