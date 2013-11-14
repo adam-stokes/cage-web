@@ -1,7 +1,0 @@
-<h1>Pages</h1>
-{{pages.length}}
-<div ng-repeat="page in pages track by $id(page)">
-  page - {{page.title}}
-</div>
-
-
