@@ -4,7 +4,8 @@ var cagewebControllers = angular.module('cagewebControllers', []);
 
 cagewebControllers.controller('IndexCtrl', ['$scope', '$http',
     function($scope, $http) {
-        $http.get('http://localhost:9000/entity/activity').
+        // hardcoded path to my local cmf server returning json of activities
+        $http.get('http://storage.bigboi.lvh.me/entity/activity').
         success(function(data, status, headers, config) {
             $scope.activity = data;
             console.log($scope.activity);
