@@ -7,12 +7,12 @@ var cageweb = angular.module('cageweb', [
 
 cageweb.config(['$routeProvider',
   function($routeProvider) {
-      $routeProvider.
-	  when('/', {
-	      templateUrl: 'partials/index',
-	      controller: 'IndexCtrl'
-	  }).
-	  otherwise({
-	      redirectTo: '/'
-	  });
-  }]);
+    $routeProvider.
+    when('/', {
+        templateUrl: 'partials/index',
+        controller: 'IndexCtrl'
+    }).
+    otherwise({
+        redirectTo: '/'
+    });
+}]);
